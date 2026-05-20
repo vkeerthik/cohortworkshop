@@ -11,8 +11,8 @@ const nextConfig = {
   output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
-  basePath: isProd && REPO_NAME ? `/${REPO_NAME}` : "",
-  assetPrefix: isProd && REPO_NAME ? `/${REPO_NAME}/` : "",
+  basePath: isProd && cohortworkshop ? `/${cohortworkshop}` : "",
+  assetPrefix: isProd && cohortworkshop ? `/${cohortworkshop}/` : "",
 };
 
 export default nextConfig;
