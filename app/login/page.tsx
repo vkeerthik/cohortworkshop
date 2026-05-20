@@ -73,7 +73,7 @@ export default function LoginPage() {
           <form onSubmit={submit} className="mt-8 space-y-4">
             <div className="space-y-1.5">
               <Label htmlFor="email">Work email</Label>
-              <Input id="email" type="email" defaultValue="claude.sales@cabotsolutions.com" />
+              <Input id="email" type="email" defaultValue="test@cabotsolutions.com" />
             </div>
             <div className="space-y-1.5">
               <Label htmlFor="password">Password</Label>
