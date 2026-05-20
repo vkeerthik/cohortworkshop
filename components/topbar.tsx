@@ -48,7 +48,7 @@ export function Topbar() {
             CS
           </div>
           <div className="leading-tight">
-            <p className="text-[13px] font-medium text-ink">Claude S.</p>
+            <p className="text-[13px] font-medium text-ink">Test User</p>
             <p className="text-[11px] text-ink-subtle">Patient Education</p>
           </div>
         </div>
