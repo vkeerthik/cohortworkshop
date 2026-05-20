@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply antialiased; }
+  body {
+    @apply bg-canvas text-ink font-sans;
+    font-feature-settings: "ss01", "cv11";
+  }
+  .num { font-variant-numeric: tabular-nums; }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-border rounded-md shadow-card;
+  }
+  .label {
+    @apply text-[11px] font-medium uppercase tracking-[0.08em] text-ink-muted;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-medium border;
+  }
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas;
+  }
+}
+
+/* faint grid pattern for empty states */
+.bg-dotgrid {
+  background-image: radial-gradient(rgba(26,35,48,0.07) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
