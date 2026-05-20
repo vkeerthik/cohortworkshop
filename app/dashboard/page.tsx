@@ -32,14 +32,14 @@ export default function DashboardPage() {
         <div className="flex items-end justify-between">
           <div>
             <p className="label">{new Date().toLocaleDateString("en-CA", { weekday: "long", month: "long", day: "numeric" })}</p>
-            <h2 className="font-serif text-display text-ink mt-1">Good afternoon, Claude.</h2>
+            <h2 className="font-serif text-display text-ink mt-1">Good afternoon, Test user.</h2>
             <p className="text-ink-muted text-[15px] mt-1.5">
               {upcoming.length} workshops scheduled this week. {totalRegistered} participants registered overall.
             </p>
           </div>
           <div className="flex gap-2">
             <Button variant="secondary" asChild>
-              <Link href="/participants/import"><Upload className="h-4 w-4" /> Import roster</Link>
+              <Link href="/participants/import"><Upload className="h-4 w-4" /> Import Roster</Link>
             </Button>
             <Button asChild>
               <Link href="/workshops/new"><CalendarPlus className="h-4 w-4" /> New workshop</Link>
